@@ -80,3 +80,6 @@ crashlytics-build.properties
 
 # Apple folder attributes file
 .DS_Store
+
+# Ignore AutoHand Asset
+/[Aa]ssets/AutoHand
