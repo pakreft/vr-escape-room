@@ -83,3 +83,6 @@ crashlytics-build.properties
 
 # Ignore AutoHand Asset
 /[Aa]ssets/AutoHand
+
+# Ignore CyberRoom Asset
+/[Aa]ssets/CyberRoom
