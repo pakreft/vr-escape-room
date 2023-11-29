@@ -36,7 +36,7 @@ public class InputRelaySink : MonoBehaviour {
 
         //Berechne die Position im Canvas
         Vector3 mousePosition = new Vector3(CanvasTransform.sizeDelta.x * normalisedPosition.x, CanvasTransform.sizeDelta.y * normalisedPosition.y, 0f);
-        // Debug.Log(mousePosition);
+        Debug.Log(mousePosition);
 
 
         
