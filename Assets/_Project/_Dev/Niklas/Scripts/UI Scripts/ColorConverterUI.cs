@@ -17,18 +17,25 @@ public class ColorConverterUI : MonoBehaviour, IPointerEnterHandler, IPointerExi
         // Stelle sicher, dass das Game Object ein Text Component hat
 
         InputRelaySink.Instance.OnRaycastResult += InputRelaySink_OnRaycastResult;
+
         textOriginalColor = textComponent.color;
         colorbgOriginalColor = imageComponent.color;
         
     }
 
     private void InputRelaySink_OnRaycastResult(object sender, InputRelaySink.OnRaycastResultEventArgs e) {
+
         List<string> raycastResultStrings = new List<string>();
+        
         foreach (var result in e.raycastResults) {
             raycastResultStrings.Add(result.gameObject.name);
+            //Debug.Log(result.gameObject.name);
         }
-        
-        if(raycastResultStrings.Contains(imageComponent.gameObject.name)) {
+        while (raycastResultStrings.Count > 10) {
+            raycastResultStrings.RemoveAt(0); // Entferne das älteste Element
+        }
+        // Debug.Log(raycastResultStrings.Count);
+        if (raycastResultStrings.Contains(imageComponent.gameObject.name)) {
             ConvertColor();
         } else if (!raycastResultStrings.Contains(imageComponent.gameObject.name)) {
             ConvertColorToOriginal();
@@ -36,7 +43,7 @@ public class ColorConverterUI : MonoBehaviour, IPointerEnterHandler, IPointerExi
         
         
     }
-
+    
     // Wird aufgerufen, wenn die Maus über das Text Element geht
     public void OnPointerEnter(PointerEventData eventData) {
         // Invertiere die Farbe, wenn die Maus darüber schwebt
@@ -47,6 +54,7 @@ public class ColorConverterUI : MonoBehaviour, IPointerEnterHandler, IPointerExi
             imageComponent.color = new Color(0, 1, 0, colorbgOriginalColor.a);
         }
     }
+    
     private void ConvertColor() {
 
         if (textComponent != null) {
@@ -56,13 +64,13 @@ public class ColorConverterUI : MonoBehaviour, IPointerEnterHandler, IPointerExi
             imageComponent.color = new Color(0, 1, 0, colorbgOriginalColor.a);
         }
     }
-
+    
     private void ConvertColorToOriginal() {
 
         imageComponent.color = colorbgOriginalColor;
         textComponent.color = textOriginalColor;
     }
-        
+     
     // Wird aufgerufen, wenn die Maus das Text Element verlässt
     public void OnPointerExit(PointerEventData eventData) {
         // Setze die Farbe auf die ursprüngliche Farbe zurück, wenn die Maus das Element verlässt
@@ -74,4 +82,5 @@ public class ColorConverterUI : MonoBehaviour, IPointerEnterHandler, IPointerExi
             imageComponent.color = colorbgOriginalColor;
         }
     }
+     
 }

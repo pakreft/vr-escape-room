@@ -27,8 +27,10 @@ public class InputRelaySource : MonoBehaviour
             if (hitResult.collider.gameObject != gameObject) {
                 return;
             }
-            OnCursorInput.Invoke(hitResult.textureCoord);
-            //Debug.Log(hitResult.textureCoord);
+            if (hitResult.textureCoord != Vector2.zero) {
+                OnCursorInput.Invoke(hitResult.textureCoord);
+                //Debug.Log(hitResult.textureCoord);
+            }
         }
         
     }
