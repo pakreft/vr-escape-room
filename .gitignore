@@ -28,7 +28,7 @@
 
 # Visual Studio
 .vs/
-.vsconfig/
+.vsconfig
 
 # Visual Studio Code
 .vscode/
