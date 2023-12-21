@@ -1,0 +1,324 @@
+fileFormatVersion: 2
+guid: 81f72712c3a1c5649b8c17a3946972a8
+ModelImporter:
+  serializedVersion: 22200
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BaseCubes_Baked
+    second: {fileID: 2100000, guid: 846c5d8197dda7145a0d9f244e276486, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Glass_Baked
+    second: {fileID: 2100000, guid: 0783e63d030404c409142401195be93f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: HandleAnchor_Baked
+    second: {fileID: 2100000, guid: 528faaca1206d54409fb9e6009804edb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Handle_Baked
+    second: {fileID: 2100000, guid: 27bb1b7e791f96446b4739e52bcb2178, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: LEDSocket_Baked
+    second: {fileID: 2100000, guid: fcd6cb4eb800ab24cb9f34979cae8243, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: LED_Baked
+    second: {fileID: 2100000, guid: 658b7e133aa1e8e4da70fc321dd960b1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: LeverBase_Baked
+    second: {fileID: 2100000, guid: c8c5c932563dc2747adfcb7865bb5027, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PowerLever_Baked
+    second: {fileID: 2100000, guid: 6df1f426275f80546b87cf677cb7e124, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: VoltageSign_Baked
+    second: {fileID: 2100000, guid: edf83c7e5d993ec408ab11d8005501a2, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: BaseCubes_Bake1_PBR_Diffuse
+    second: {fileID: 2800000, guid: 0097f98d5bd93e54589848f6bab70c2d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: BaseCubes_Bake1_PBR_Metalness
+    second: {fileID: 2800000, guid: 068148ab57e8fc6499b64b8ffde5cdc8, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: BaseCubes_Bake1_PBR_Normal
+    second: {fileID: 2800000, guid: 54a7fb9dab4180941a2be55ab6f34a34, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: BaseCubes_Bake1_PBR_Roughness
+    second: {fileID: 2800000, guid: bfe64b24be36af64aa375f11159901a5, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Glass_Bake1_PBR_Diffuse
+    second: {fileID: 2800000, guid: 612278878d189c0458d02e5bbaea9642, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Glass_Bake1_PBR_Emission
+    second: {fileID: 2800000, guid: 048b2bc2a1ff3ff4aa20c4472199e7ab, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Glass_Bake1_PBR_Metalness
+    second: {fileID: 2800000, guid: 19af64c4d3c291e4da203d9c05ebf3b7, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Glass_Bake1_PBR_Normal
+    second: {fileID: 2800000, guid: c478b82c57abda6489ae8e1f7e1d2765, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Glass_Bake1_PBR_Roughness
+    second: {fileID: 2800000, guid: effb6b3c5d75e6f438cb7db8684742bb, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: HandleAnchor_Bake1_PBR_Diffuse
+    second: {fileID: 2800000, guid: 9c0f9a2ea1b69ba4b9c71b240c569739, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: HandleAnchor_Bake1_PBR_Metalness
+    second: {fileID: 2800000, guid: 34e00da09539c32459fb0e7f1fdb9d93, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: HandleAnchor_Bake1_PBR_Normal
+    second: {fileID: 2800000, guid: 723606e11adf10b489cd520385c0b862, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: HandleAnchor_Bake1_PBR_Roughness
+    second: {fileID: 2800000, guid: 1d41aebbd11c1ea43b1d016880de4b5e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Handle_Bake1_PBR_Diffuse
+    second: {fileID: 2800000, guid: 8a91a48a326b5b14c8678c7123e691ba, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Handle_Bake1_PBR_Metalness
+    second: {fileID: 2800000, guid: 626eb815822bacb49b1dd117e14501e4, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Handle_Bake1_PBR_Normal
+    second: {fileID: 2800000, guid: 7289c6cafa1f98046b821f625b47486f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Handle_Bake1_PBR_Roughness
+    second: {fileID: 2800000, guid: ccd8151c6efbbae4b80f2444c9b38d6d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: LEDSocket_Bake1_PBR_Diffuse
+    second: {fileID: 2800000, guid: ef369166015b69f4faa780aad08a89cb, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: LEDSocket_Bake1_PBR_Metalness
+    second: {fileID: 2800000, guid: 51eb94461a8affc4d92dcab06c34ea7a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: LEDSocket_Bake1_PBR_Normal
+    second: {fileID: 2800000, guid: c9b88bb4cc0bd2c40b6d42e3d8087153, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: LEDSocket_Bake1_PBR_Roughness
+    second: {fileID: 2800000, guid: b684fb90ac1cca841bb0048c25fdb3ef, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: LED_Bake1_PBR_Emission
+    second: {fileID: 2800000, guid: 61561a4d95c938d439980737212ae39a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: LeverBase_Bake1_PBR_Diffuse
+    second: {fileID: 2800000, guid: 481ccfc16e747fe45b925c1a1bbfa9a1, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: LeverBase_Bake1_PBR_Metalness
+    second: {fileID: 2800000, guid: 41e7381aa641b1548b9465ddf50efc05, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: LeverBase_Bake1_PBR_Normal
+    second: {fileID: 2800000, guid: df268b274b7013445b9ea93de8cf6a56, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: LeverBase_Bake1_PBR_Roughness
+    second: {fileID: 2800000, guid: d77db9edd1a4d6d46ad5cc3d8fc5021e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: PowerLever_Bake1_PBR_Diffuse
+    second: {fileID: 2800000, guid: 0607a1790683d8e4daa9f319d7535177, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: PowerLever_Bake1_PBR_Metalness
+    second: {fileID: 2800000, guid: 6fdd1db0b607bf842ae9d8e38e32c023, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: PowerLever_Bake1_PBR_Normal
+    second: {fileID: 2800000, guid: 1b834ae753259ae46bdde014438f0628, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: PowerLever_Bake1_PBR_Roughness
+    second: {fileID: 2800000, guid: 27bd4b5abe3cded46a3a3b3140b9d92e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: VoltageSign_Bake1_PBR_Diffuse
+    second: {fileID: 2800000, guid: 073390c6727cda044939b72bfdf2baa2, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: VoltageSign_Bake1_PBR_Metalness
+    second: {fileID: 2800000, guid: e61d413a14e05964aa7ad92ea021dcda, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: VoltageSign_Bake1_PBR_Normal
+    second: {fileID: 2800000, guid: 4a7dfce9a3ec40c44a9edd691211712b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: VoltageSign_Bake1_PBR_Roughness
+    second: {fileID: 2800000, guid: 02512e1d862703149a25caf74485c685, type: 3}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

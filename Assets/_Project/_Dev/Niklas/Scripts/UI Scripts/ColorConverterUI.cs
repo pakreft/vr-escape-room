@@ -40,8 +40,8 @@ public class ColorConverterUI : MonoBehaviour, IPointerEnterHandler, IPointerExi
         } else if (!raycastResultStrings.Contains(imageComponent.gameObject.name)) {
             ConvertColorToOriginal();
         }
-        
-        
+
+        //Debug.Log(raycastResultStrings.Count);
     }
     
     // Wird aufgerufen, wenn die Maus über das Text Element geht

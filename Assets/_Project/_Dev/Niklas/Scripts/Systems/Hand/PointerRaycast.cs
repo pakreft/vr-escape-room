@@ -22,8 +22,8 @@ public class PointerRaycast : MonoBehaviour {
     void Start() {
         // Initialisiere den LineRenderer
         lineRenderer = gameObject.AddComponent<LineRenderer>();
-        lineRenderer.startWidth = 0.02f;
-        lineRenderer.endWidth = 0.02f;
+        lineRenderer.startWidth = 0.001f;
+        lineRenderer.endWidth = 0.001f;
         lineRenderer.material = new Material(Shader.Find("Standard"));
         lineRenderer.material.color = Color.red;
         lineRenderer.positionCount = 2; // Setze die Anzahl der Positionen auf 2

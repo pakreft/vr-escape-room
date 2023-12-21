@@ -31,7 +31,7 @@ public class CCTvMovie : MonoBehaviour
     {
         GameManager.Instance.OnStateChanged += GameManager_OnStateChanged;
 
-        startUpDelay = Random.Range(1f, 3f);
+        startUpDelay = Random.Range(1f, 7f);
 
         _Material = GetComponent<Renderer>().materials[MatId];
         //bright
@@ -66,7 +66,7 @@ public class CCTvMovie : MonoBehaviour
     void Update () 
     {
         PlayFrames();
-        Debug.Log(gameObject.name + "  " + startUpDelay);
+        //Debug.Log(gameObject.name + "  " + startUpDelay);
     }
 
     private void PlayFrames() {

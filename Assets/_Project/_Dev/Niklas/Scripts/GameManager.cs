@@ -58,5 +58,10 @@ public class GameManager : MonoBehaviour
     public void OnLeverMax() {
         state = State.PowerOn;
     }
-    
+
+    public void OnLeverMin() {
+        state = State.PowerOff;
+        Debug.Log(" Power Off");
+    }
+
 }

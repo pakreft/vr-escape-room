@@ -5,6 +5,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
@@ -13,6 +14,7 @@ public class InputRelaySink : MonoBehaviour {
     public static InputRelaySink Instance { get; private set; }
 
     [SerializeField] RectTransform CanvasTransform;
+    
 
     public event EventHandler<OnRaycastResultEventArgs> OnRaycastResult;
 
@@ -49,11 +51,12 @@ public class InputRelaySink : MonoBehaviour {
         
         PointerEventData controllerEvent = new PointerEventData(EventSystem.current);
         controllerEvent.position = simulatedMousePosition;
-
+        Debug.Log(results.Count);
         foreach (var result in results) {
+            
             controllerEvent.pointerPressRaycast = result;
             controllerEvent.pointerPress = ExecuteEvents.GetEventHandler<IPointerClickHandler>(controllerEvent.pointerPressRaycast.gameObject);
-
+            
             ExecuteEvents.Execute(result.gameObject, mouseEvent, ExecuteEvents.pointerDownHandler);
             ExecuteEvents.Execute(result.gameObject, mouseEvent, ExecuteEvents.pointerUpHandler);
             ExecuteEvents.Execute(result.gameObject, mouseEvent, ExecuteEvents.pointerClickHandler);
@@ -65,6 +68,27 @@ public class InputRelaySink : MonoBehaviour {
         Debug.Log("Trigger gedrückt");
     }
 
+    public void OnReceiveTriggerInputAction() {
+
+        PointerEventData controllerEvent = new PointerEventData(EventSystem.current);
+        controllerEvent.position = simulatedMousePosition;
+        Debug.Log(results.Count);
+        foreach (var result in results) {
+
+            controllerEvent.pointerPressRaycast = result;
+            controllerEvent.pointerPress = ExecuteEvents.GetEventHandler<IPointerClickHandler>(controllerEvent.pointerPressRaycast.gameObject);
+
+            ExecuteEvents.Execute(result.gameObject, mouseEvent, ExecuteEvents.pointerDownHandler);
+            ExecuteEvents.Execute(result.gameObject, mouseEvent, ExecuteEvents.pointerUpHandler);
+            ExecuteEvents.Execute(result.gameObject, mouseEvent, ExecuteEvents.pointerClickHandler);
+
+
+        }
+
+
+        Debug.Log("Trigger gedrückt");
+    }
+
     GraphicRaycaster Raycaster;
     // Start is called before the first frame update
     void Start()
@@ -72,7 +96,12 @@ public class InputRelaySink : MonoBehaviour {
         Raycaster = GetComponent<GraphicRaycaster>();
     }
 
-    
+    private void Update() {
+       
+        
+
+        
+    }
 
 
     public void OnCursorInput(Vector2 normalisedPosition) {
@@ -92,6 +121,9 @@ public class InputRelaySink : MonoBehaviour {
         
         Raycaster.Raycast(mouseEvent, results);
 
+        while (results.Count > 10) {
+            results.RemoveAt(0);
+        }
         OnRaycastResult?.Invoke(this, new OnRaycastResultEventArgs { raycastResults = results });
 
         bool sendMouseDown = Input.GetMouseButtonDown(0);

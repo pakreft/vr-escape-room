@@ -43,7 +43,7 @@ public class LampColor : MonoBehaviour
 
     private void LampPowerOff() {
 
-        lamp.intensity = .5f;
+        lamp.intensity = 1f;
         lamp.color = powerOffColor;
 
         material = GetComponent<Renderer>().material;
