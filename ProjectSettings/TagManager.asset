@@ -15,10 +15,10 @@ TagManager:
   - Grabbable
   - Hand
   - HandPlayer
-  - 
-  - 
-  - 
-  - 
+  - Openable
+  - OpenableFrame
+  - Button
+  - ButtonFrame
   - 
   - 
   - 
