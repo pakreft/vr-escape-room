@@ -15,8 +15,8 @@ TagManager:
   - Grabbable
   - Hand
   - HandPlayer
-  - Openable
-  - OpenableFrame
+  - Door
+  - DoorFrame
   - Button
   - ButtonFrame
   - 
