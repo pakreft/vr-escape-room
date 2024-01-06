@@ -103,7 +103,9 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[1]
       value: 
       objectReference: {fileID: 2100000, guid: 17ecdfc5726c05943ae2041c8c99f673, type: 2}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2370367260031671139, guid: 7ec62e956d27a2147ae3642c93e70424, type: 3}
+    - {fileID: 6961482901909636457, guid: 7ec62e956d27a2147ae3642c93e70424, type: 3}
     m_RemovedGameObjects:
     - {fileID: 8573003574013362400, guid: 7ec62e956d27a2147ae3642c93e70424, type: 3}
     m_AddedGameObjects: []
@@ -131,3 +133,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b0e114a4475f55438e20e242ae60547, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  floppyDisc: {fileID: 0}
+  floppyDiscProjection: {fileID: 0}
+  proximityThreshold: 1

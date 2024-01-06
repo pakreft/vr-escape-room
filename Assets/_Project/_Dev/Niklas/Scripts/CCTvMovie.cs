@@ -17,7 +17,7 @@ public class CCTvMovie : MonoBehaviour
     Material _Material;
 
     
-    private bool isPowerOn = true;
+    private bool IsPasswordEntered = true;
     private float startUpDelay;
 
     void Awake()
@@ -50,13 +50,13 @@ public class CCTvMovie : MonoBehaviour
 
         if (GameManager.Instance.IsPowerOff()) {
             
-            isPowerOn = false;
+            IsPasswordEntered = false;
         }
 
-        if (GameManager.Instance.IsPowerOn()) {
+        if (GameManager.Instance.IsPasswordEntered()) {
 
             
-            isPowerOn = true;
+            IsPasswordEntered = true;
             
 
         }
@@ -70,7 +70,7 @@ public class CCTvMovie : MonoBehaviour
     }
 
     private void PlayFrames() {
-        if(isPowerOn) {
+        if(IsPasswordEntered) {
 
             
             startUpDelay -= Time.deltaTime;

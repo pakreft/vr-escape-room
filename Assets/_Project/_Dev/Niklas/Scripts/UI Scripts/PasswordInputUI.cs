@@ -10,10 +10,19 @@ public class PasswordInputUI : MonoBehaviour {
 
     public event EventHandler OnWelcomeTimerStarted;
     private float welcomeTimer = 0f;
+    private float resetTimer = 0f;
     private bool executeTimer = false;
+    private bool executeResetTimer = false;
+
+    public static PasswordInputUI Instance { get; private set; }
+
+    private void Awake() {
+        Instance = this;
+    }
 
     private void Start() {
         OnWelcomeTimerStarted += PasswordInputUI_OnWelcomeTimerStarted;
+        
     }
 
     private void PasswordInputUI_OnWelcomeTimerStarted(object sender, EventArgs e) {
@@ -21,20 +30,21 @@ public class PasswordInputUI : MonoBehaviour {
     }
     private void Update() {
         CountdownWelcomeScreen();
+        CountdownResetTimer();
 
         }
-        /*
-        OnPasswordEntered();
-    }
-    // Wird aufgerufen, wenn der Benutzer das Passwort eingibt und Enter drückt
-    public void OnPasswordEntered() {
-        string enteredPassword = passwordInputField.text;
-
-        // Hier kannst du das eingegebene Passwort verwenden oder überprüfen
-        CheckPassword(enteredPassword);
-        */
+        
     
-
+    private void CountdownResetTimer() {
+        if (executeResetTimer) {
+            resetTimer += Time.deltaTime;
+            if (resetTimer > 2f) {
+                executeResetTimer = false;
+                resetTimer = 0f;
+                passwordInputField.text = string.Empty;
+            }
+        }
+    }
     private void CountdownWelcomeScreen() {
 
         if (executeTimer) {
@@ -50,12 +60,15 @@ public class PasswordInputUI : MonoBehaviour {
     }
     // Methode zur Überprüfung des Passworts (Beispiel: Überprüfung auf "geheimesPasswort")
     private void CheckPassword(string userInputString) {
-        if (userInputString == "1234") {
+        if (userInputString == "0394") {
             OnWelcomeTimerStarted?.Invoke(this, EventArgs.Empty);
+            GameManager.Instance.OnPasswordEntered();
+            passwordInputField.text = string.Empty;
 
             Debug.Log("Passwort korrekt!");
         } else {
-            passwordInputField.text = "--------";
+            passwordInputField.text = "*DENIED*";
+            executeResetTimer = true;
         }
 
 

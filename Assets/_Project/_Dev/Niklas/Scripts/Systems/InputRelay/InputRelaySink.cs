@@ -51,7 +51,7 @@ public class InputRelaySink : MonoBehaviour {
         
         PointerEventData controllerEvent = new PointerEventData(EventSystem.current);
         controllerEvent.position = simulatedMousePosition;
-        Debug.Log(results.Count);
+        //Debug.Log(results.Count);
         foreach (var result in results) {
             
             controllerEvent.pointerPressRaycast = result;
@@ -65,7 +65,7 @@ public class InputRelaySink : MonoBehaviour {
         }
 
         
-        Debug.Log("Trigger gedrückt");
+        //Debug.Log("Trigger gedrückt");
     }
 
     public void OnReceiveTriggerInputAction() {
@@ -86,7 +86,7 @@ public class InputRelaySink : MonoBehaviour {
         }
 
 
-        Debug.Log("Trigger gedrückt");
+        //Debug.Log("Trigger gedrückt");
     }
 
     GraphicRaycaster Raycaster;

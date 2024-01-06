@@ -14,7 +14,8 @@ public class GameManager : MonoBehaviour
     private enum State {
         PowerOff,
         PowerOn,
-        StickInserted,
+        PasswordEntered,
+        DiscInserted,
         RedPillExe,      
     }
     private State state;
@@ -40,11 +41,20 @@ public class GameManager : MonoBehaviour
             case State.PowerOn:
                 OnStateChanged?.Invoke(this, EventArgs.Empty);
                 break;
-            case State.StickInserted:
+            case State.PasswordEntered:
+                OnStateChanged?.Invoke(this, EventArgs.Empty);
+                break;
+            case State.DiscInserted:
+                OnStateChanged?.Invoke(this, EventArgs.Empty);
                 break;
             case State.RedPillExe:
                 break;
         }
+    }
+
+
+    public bool IsPasswordEntered() {
+        return state == State.PasswordEntered;
     }
 
     public bool IsPowerOff() {
@@ -53,6 +63,10 @@ public class GameManager : MonoBehaviour
 
     public bool IsPowerOn() {
         return state == State.PowerOn;
+    }
+
+    public bool IsDiskInserted() {
+        return state == State.DiscInserted;
     }
 
     public void OnLeverMax() {
@@ -64,4 +78,16 @@ public class GameManager : MonoBehaviour
         Debug.Log(" Power Off");
     }
 
+    public void OnPasswordEntered() {
+        state = State.PasswordEntered;
+    }
+
+    public void OnDiscInserted() {
+        state = State.DiscInserted;
+        Debug.Log("DiscInserted");
+    }
+
+    public void ButtonTest() {
+        Debug.Log("Button gedrückt");
+    }
 }
