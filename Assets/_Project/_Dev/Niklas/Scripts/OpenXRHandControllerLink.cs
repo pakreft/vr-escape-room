@@ -1,11 +1,11 @@
 using System;
+using Autohand;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.InputSystem;
-using UnityEngine.XR;
 using UnityEngine.XR.OpenXR.Input;
 
-namespace Autohand.Demo {
+namespace LNPEscapeRoom {
 
     [HelpURL("https://app.gitbook.com/s/5zKO0EvOjzUDeT2aiFk3/auto-hand/controller-input")]
     public class OpenXRHandControllerLink : HandControllerLink {

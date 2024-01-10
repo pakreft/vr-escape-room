@@ -88,6 +88,6 @@ public class GameManager : MonoBehaviour
     }
 
     public void ButtonTest() {
-        Debug.Log("Button gedrückt");
+        Debug.Log("Button gedrÃ¼ckt");
     }
 }
