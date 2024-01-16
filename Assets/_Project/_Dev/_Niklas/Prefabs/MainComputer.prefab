@@ -118,6 +118,7 @@ GameObject:
   - component: {fileID: 5744184400112387588}
   - component: {fileID: 7406293436041221812}
   - component: {fileID: 3122282359120227619}
+  - component: {fileID: 3589677690263549081}
   m_Layer: 0
   m_Name: MainComputerScreenVisual
   m_TagString: Untagged
@@ -212,6 +213,38 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -2257655931095584118, guid: 138021882097da54498cf9426c885e47, type: 3}
+--- !u!114 &3589677690263549081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5613864964014291954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7579411a0fa59fc4fb2e7fb95d192ae9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RaycastMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  RaycastDistance: 15
+  OnCursorInput:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2587879593725908159, guid: eb9349e44a0be6941bdd7f0a2ba1a7d3,
+          type: 3}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &8300458977594581934
 GameObject:
   m_ObjectHideFlags: 0
